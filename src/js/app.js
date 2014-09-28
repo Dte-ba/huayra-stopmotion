@@ -10,7 +10,6 @@ var gui = require('nw.gui');
 var fs = require('fs');
 var path = require('path');
 var ffmpeg = require('fluent-ffmpeg');
-var utils = require('./js/utils');
 var exec = require('child_process').exec;
 
 var mostrar_herramientas_de_desarrollo = function() {

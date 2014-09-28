@@ -2,7 +2,6 @@
     "name": "stop motion",
     "main": "index.html",
     "version": "0.1",
-    "livereload": false,
     "single-instance": false,
     "compartir": true,
     "chromium-args": "--ignore-certificate-errors --enable-threaded-compositing",
