@@ -18,20 +18,6 @@ var mostrar_herramientas_de_desarrollo = function() {
 };
 
 
-fs.watch('/Users/hugoruscitti/.huayra/', function (event, filename) {
-
-    if (filename && event == 'change') {
-        body.style.opacity = 0;
-
-        setTimeout(function() {
-            estilo_css.href = '/Users/hugoruscitti/.huayra/theme.css';
-            body.style.opacity = 1;
-        }, 500);
-    }
-
-});
-
-
 window.mostrar = function(elemento) {
     /* Se ejecuta cuando la imagen del timeline está lista para ser mostrada. */
 
