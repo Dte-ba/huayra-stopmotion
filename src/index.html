@@ -7,7 +7,7 @@
 
         <title>Huayra Motion</title>
 
-        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link id='estilo_css' href="css/bootstrap.css" rel="stylesheet" />
         <link href="css/theme.css" rel="stylesheet" />
         <link href="css/theme-helper.css" rel="stylesheet" />
         <link href="css/theme-icon.css" rel="stylesheet" />
@@ -17,7 +17,7 @@
         <link href="css/custom.css" rel="stylesheet" />
     </head>
 
-    <body ng-controller='AppCtrl'>
+    <body id='body' ng-controller='AppCtrl'>
         <!-- CUADROS DE DIALOGO PARA ABRIR Y GUARDAR PROYECTOS -->
         <input style="display:none;" id="open-dialog" type="file" accept=".hmotion"/>
         <input style="display:none;" id="save-dialog" type="file" nwsaveas="proyecto.hmotion" accept=".hmotion"/>
@@ -414,22 +414,25 @@
 
 </footer>
 
-<script src="js/jquery.js"></script>
-<script src="js/jquery.sortable.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/angular.js"></script>
-<script src="js/angular-animate.js"></script>
-<script src='bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js'></script>
-<script src="js/keymaster.js"></script>
+<script src="js/libs/jquery.js"></script>
+<script src="js/libs/jquery.sortable.js"></script>
+<script src="js/libs/bootstrap.js"></script>
+<script src="js/libs/angular.js"></script>
+<script src="js/libs/angular-animate.js"></script>
+<script src="js/libs/keymaster.js"></script>
+<script src="js/libs/sly.js"></script>
+<script src="js/libs/plugins.js"></script>
+<script src='js/libs/ui-bootstrap-tpls.js'></script>
+
 <script src="js/app.js"></script>
-<script src="js/servicios/paneles.js"></script>
-<script src="js/servicios/proyecto.js"></script>
-<script src="js/servicios/menu.js"></script>
-<script src="js/preferencias.js"></script>
-<script src="js/filters.js"></script>
-<script src="js/video.js"></script>
-<script src="js/sly.js"></script>
-<script src="js/plugins.js"></script>
+<script src="js/controllers/appCtrl.js"></script>
+<script src="js/services/paneles.js"></script>
+<script src="js/services/proyecto.js"></script>
+<script src="js/services/menu.js"></script>
+<script src="js/services/preferencias.js"></script>
+<script src="js/services/video.js"></script>
+<script src="js/filters/filters.js"></script>
+
 <script src="js/livereload.js"></script>
 
 </body>
