@@ -1,3 +1,10 @@
+var fs = require('fs');
+var gui = require('nw.gui');
+var path = require('path');
+var ffmpeg = require('fluent-ffmpeg');
+var exec = require('child_process').exec;
+
+
 var app = angular.module('app');
 
 app.controller('AppCtrl', function ($scope, $modal, Video, Paneles, Preferencias, Proyecto, Menu, $timeout) {
